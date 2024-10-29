@@ -16,6 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -231,7 +235,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">CONTACT</a>
+              <a class="nav-link" aria-current="page" href="contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -338,7 +342,7 @@
 
     <div class="about-us" style="padding-top: 80px">
       <div class="about-text text-center">
-        <h2>About Us</h2>
+        <h2 class="title">About Us</h2>
         <p style="margin: 20px 0 60px 0; color: #666666">About Us</p>
       </div>
 
@@ -443,6 +447,7 @@
               </button>
             </div>
           </div>
+          <div class="scroll"></div>
         </div>
       </div>
     </div>
@@ -464,7 +469,7 @@
                 ></i>
               </div>
               <div class="counter-text">
-                <h5>8000</h5>
+                <h5 class="num" data-goal="100">0</h5>
                 <p>Total Projects</p>
               </div>
             </div>
@@ -484,7 +489,7 @@
                 ></i>
               </div>
               <div class="counter-text">
-                <h5>810</h5>
+                <h5 class="num" data-goal="410">0</h5>
                 <p>Won Awards</p>
               </div>
             </div>
@@ -504,7 +509,7 @@
                 ></i>
               </div>
               <div class="counter-text">
-                <h5>2000</h5>
+                <h5 class="num" data-goal="200">0</h5>
                 <p>Happy Clients</p>
               </div>
             </div>
@@ -524,7 +529,7 @@
                 ></i>
               </div>
               <div class="counter-text">
-                <h5>20</h5>
+                <h5 class="num" data-goal="20">0</h5>
                 <p>Years Experience</p>
               </div>
             </div>
@@ -535,7 +540,7 @@
     <div class="our-services">
       <div class="container py-5 service-container">
         <div class="text-center text-white">
-          <h2 style="font-size: 40px; margin-bottom: 20px">Our Services</h2>
+          <h2 class="title" style="margin-bottom: 20px">Our Services</h2>
           <p
             class="m-auto"
             style="margin-bottom: 70px !important; max-width: 800px"
@@ -705,31 +710,971 @@
         </div>
       </div>
     </div>
-    <div class="our-work" style="margin-top: 100px">
+    <div class="our-work" style="margin: 100px 0">
       <div class="container">
         <div class="text-center">
-          <h2 style="font-size: 40px">Our Work</h2>
-          <p
-            class="m-auto"
-            style="margin-bottom: 70px !important; max-width: 800px"
-          >
+          <h2 class="title">Our Work</h2>
+          <p class="m-auto" style="max-width: 800px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             tempor, nisl sed bibendum pretium, diam nisi mattis lectus, eu
             varius lorem mauris posuere dui. Proin consequat.
           </p>
         </div>
+        <div class="row">
+          <div class="col-12">
+            <ol
+              class="breadcrumb d-flex justify-content-center"
+              style="margin: 30px 0"
+            >
+              <li
+                style="color: blue"
+                class="breadcrumb-item active"
+                aria-current="page"
+              >
+                All
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Creative Design
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Development
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Graphic Design
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="position-relative work-img">
+              <div><img class="w-100" src="./image/1.jpg" alt="" /></div>
+              <ul>
+                <li>
+                  <h4>Developement, Graphic Design</h4>
+                  <h5>Project Title01</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-plus"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="position-relative work-img">
+              <div><img class="w-100" src="./image/2.jpg" alt="" /></div>
+              <ul>
+                <li>
+                  <h4>Developement, Graphic Design</h4>
+                  <h5>Project Title01</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-plus"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="position-relative work-img">
+              <div><img class="w-100" src="./image/3.jpg" alt="" /></div>
+              <ul>
+                <li>
+                  <h4>Developement, Graphic Design</h4>
+                  <h5>Project Title01</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-plus"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="position-relative work-img">
+              <div>
+                <img class="w-100" src="./image/4.jpg" alt="" />
+              </div>
+              <ul>
+                <li>
+                  <h4>Developement, Graphic Design</h4>
+                  <h5>Project Title01</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-plus"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="position-relative work-img">
+              <div><img class="w-100" src="./image/5.jpg" alt="" /></div>
+              <ul>
+                <li>
+                  <h4>Developement, Graphic Design</h4>
+                  <h5>Project Title01</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-plus"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="position-relative work-img">
+              <div><img class="w-100" src="./image/6.jpg" alt="" /></div>
+              <ul>
+                <li>
+                  <h4>Developement, Graphic Design</h4>
+                  <h5>Project Title01</h5>
+                </li>
+                <li>
+                  <i class="fa-solid fa-plus"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <our-gallarey>
+    <div class="our-gallarey">
       <div>
-        <img class="w-100" src="image/ecommerce-cover-2.jpg" alt="">
+        <img class="w-100" src="image/ecommerce-cover-2.jpg" alt="" />
       </div>
-    </our-gallarey>
+    </div>
+    <div
+      class="our-creative"
+      style="background-color: #f9f9f9; padding-top: 75px"
+    >
+      <div class="container">
+        <div class="text-center">
+          <h2>our creative team</h2>
+          <p style="max-width: 850px" class="m-auto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor. incididunt ut labore et dolore. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit, sed do eiusm dipisicing
+            elit, sed do eiusmod tempor.
+          </p>
+        </div>
+        <div class="row" style="margin-top: 40px">
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="members pt-5 position-relative">
+              <img src="./image//team1.png" alt="" />
+              <div class="members-text">
+                <h5 style="cursor: pointer">Jen Whyan</h5>
+                <h6 class="pb-4" style="color: #0c65ed">
+                  Founder
+                  <hr
+                    class="m-auto mt-3"
+                    style="width: 60%; opacity: 2; color: black"
+                  />
+                </h6>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                  imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+                  mauris....
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="members pt-5 position-relative">
+              <img src="./image//team2.png" alt="" />
+              <div class="members-text">
+                <h5 style="cursor: pointer">Jen Whyan</h5>
+                <h6 class="pb-4" style="color: #0c65ed">
+                  Founder
+                  <hr
+                    class="m-auto mt-3"
+                    style="width: 60%; opacity: 2; color: black"
+                  />
+                </h6>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                  imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+                  mauris....
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="members pt-5 position-relative">
+              <img src="./image//team3.png" alt="" />
+              <div class="members-text">
+                <h5 style="cursor: pointer">Jen Whyan</h5>
+                <h6 class="pb-4" style="color: #0c65ed">
+                  Founder
+                  <hr
+                    class="m-auto mt-3"
+                    style="width: 60%; opacity: 2; color: black"
+                  />
+                </h6>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                  imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+                  mauris....
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="members pt-5 position-relative mx-3">
+              <img src="./image//team4.png" alt="" />
+              <div class="members-text">
+                <h5 style="cursor: pointer">Jen Whyan</h5>
+                <h6 class="pb-4" style="color: #0c65ed">
+                  Founder
+                  <hr
+                    class="m-auto mt-3"
+                    style="width: 60%; opacity: 2; color: black"
+                  />
+                </h6>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                  imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+                  mauris....
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="members pt-5 position-relative">
+              <img src="./image//team5.png" alt="" />
+              <div class="members-text">
+                <h5 style="cursor: pointer">Jen Whyan</h5>
+                <h6 class="pb-4" style="color: #0c65ed">
+                  Founder
+                  <hr
+                    class="m-auto mt-3"
+                    style="width: 60%; opacity: 2; color: black"
+                  />
+                </h6>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                  imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+                  mauris....
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 mb-3">
+            <div class="members pt-5 position-relative">
+              <img src="./image//team6.png" alt="" />
+              <div class="members-text">
+                <h5 style="cursor: pointer">Jen Whyan</h5>
+                <h6 class="pb-4" style="color: #0c65ed">
+                  Founder
+                  <hr
+                    class="m-auto mt-3"
+                    style="width: 60%; opacity: 2; color: black"
+                  />
+                </h6>
+                <p>
+                  Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget,
+                  imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+                  mauris....
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-pricing" style="padding-top: 100px">
+      <div class="container">
+        <div class="text-center">
+          <h2 style="margin-bottom: 20px" class="title">our pricing</h2>
+          <p style="max-width: 780px" class="m-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            tempor, nisl sed bibendum pretium, diam nisi mattis lectus, eu
+            varius lorem mauris posuere dui. Proin consequat.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-3">
+            <ul class="d-flex justify-content-center nav_links">
+              <li class="nav_link active1">Per / Month</li>
+              <li class="nav_link">Per / Year</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="price-item px-2 py-4">
+              <div class="price-item1 text-center">
+                <h2 style="display: inline-block">
+                  Personal
+                  <hr class="m-auto my-2" />
+                </h2>
+                <p style="font-weight: 500; font-size: 19px">
+                  From
+                  <span class="cost"
+                    >$399
+                    <hr
+                      style="background-color: rgb(155, 155, 155); height: 0px"
+                      class="m-auto mt-5"
+                  /></span>
+                </p>
+                <ul class="m-auto text-center">
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 03 PSD Pack
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 03
+                      Wordpress Pack
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 120 Support
+                      Tiket
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li class="button" style="padding-right: 50px">
+                    <button class="details-button">GET STARTED NOW</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="price-item px-2 py-4 shadow-lg mb-5 bg-body-tertiary rounded" style="border: none">
+              <div class="price-item1 text-center">
+                <h2 style="display: inline-block">
+                  Personal
+                  <hr class="m-auto my-2" />
+                </h2>
+                <p style="font-weight: 500; font-size: 19px">
+                  From
+                  <span class="cost"
+                    >$399
+                    <hr
+                      style="background-color: rgb(155, 155, 155); height: 0px"
+                      class="m-auto mt-5"
+                  /></span>
+                </p>
+                <ul class="m-auto text-center">
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 03 PSD Pack
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 03
+                      Wordpress Pack
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 120 Support
+                      Tiket
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li class="button" style="padding-right: 50px">
+                    <button class="details-button different">GET STARTED NOW</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="price-item px-2 py-4" style="border-left: none; border-right:1px solid #eaeaea ;">
+              <div class="price-item1 text-center">
+                <h2 style="display: inline-block">
+                  Personal
+                  <hr class="m-auto my-2" />
+                </h2>
+                <p style="font-weight: 500; font-size: 19px">
+                  From
+                  <span class="cost"
+                    >$399
+                    <hr
+                      style="background-color: rgb(155, 155, 155); height: 0px"
+                      class="m-auto mt-5"
+                  /></span>
+                </p>
+                <ul class="m-auto text-center">
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 03 PSD Pack
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 03
+                      Wordpress Pack
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li
+                    style="
+                      padding-right: 30px;
+                      margin-top: 20px;
+                      margin-bottom: 30px;
+                    "
+                  >
+                    <h6>
+                      <span><i class="fa-solid fa-check"></i></span> 120 Support
+                      Tiket
+                    </h6>
+                    <p style="opacity: 0.7">
+                      Lorem ipsum dolor sit amet, consectetuer Aenean commodo
+                      ligula
+                    </p>
+                  </li>
+                  <hr
+                    style="background-color: rgb(155, 155, 155); height: 0px"
+                  />
+                  <li class="button" style="padding-right: 50px">
+                    <button class="details-button">GET STARTED NOW</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe bg-dark py-5">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+          <div class="col-lg-6 col-12 text-white">
+            <div class="d-flex align-items-center sub-now" style="gap: 15px;">
+              <span style="font-size: 45px;"><i class="fa-regular fa-envelope"></i></span>
+              <h3 style="font-size: 40px;"> Subscribe now for news
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 text-white">
+            <div>
+              <input class="px-2 sub1" placeholder="Input Your Email" type="email" style="height: 40px; width: 70%; outline: none;">
+              <input class="sub" type="submit" value="Subscribe">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial my-5">
+    <div class="container">
+      <h2 class="text-center title mb-4">Testimonial</h2>
+      <div class="cards swiper">
+        <div class=" swiper-wrapper">
+          <div class="cards-item d-flex align-items-center  swiper-slide p-4" style="gap: 20px; border: 1px solid rgba(43, 43, 43, 0.113); border-radius: 10px;">
+            <div>
+              <img style="border-radius: 10px;" class="pb-4" src="./image/testi-avtar-1.jpg" alt="">
+            </div>
+            <div>
+              <h5>Jon Doe</h5>
+              <h6>Marketing Manager</h6>
+              <p style=
+              "
+              font-size: 14px;
+              font-weight: 500;
+              "
+              
+              >
+                Donec pede justo, fringilla vel, aliquet nec, vulputa
+                te eget, arcu. In enim 
+                justo,ligula. Cum eget dolor Aenean rhoncus ut, fr
+                ingilla vel, aliquet
+                 nec, imperdiet 
+                a, venenatis vitae,
+                 justo. Nullam dictum felis eu pede mollis 
+                pretium.
+              </p>
+            </div>
+          </div>
+          <div class="cards-item d-flex align-items-center swiper-slide p-4" style="gap: 20px; border: 1px solid rgba(43, 43, 43, 0.113); border-radius: 10px;">
+            <div>
+              <img style="border-radius: 10px;" class="pb-4" src="./image/testi-avtar-2.jpg" alt="">
+            </div>
+            <div>
+              <h5>Jon Doe</h5>
+              <h6>Marketing Manager</h6>
+              <p style=
+              "
+              font-size: 14px;
+              font-weight: 500;
+              "
+              
+              >
+                Donec pede justo, fringilla vel, aliquet nec, vulputa
+                te eget, arcu. In enim 
+                justo,ligula. Cum eget dolor Aenean rhoncus ut, fr
+                ingilla vel, aliquet
+                 nec, imperdiet 
+                a, venenatis vitae,
+                 justo. Nullam dictum felis eu pede mollis 
+                pretium.
+              </p>
+            </div>
+          </div>
+          <div class="cards-item d-flex align-items-center swiper-slide p-4" style="gap: 20px; border: 1px solid rgba(43, 43, 43, 0.113); border-radius: 10px;">
+            <div>
+              <img style="border-radius: 10px;" class="pb-4" src="./image/testi-avtar-3.jpg" alt="">
+            </div>
+            <div>
+              <h5>Jon Doe</h5>
+              <h6>Marketing Manager</h6>
+              <p style=
+              "
+              font-size: 14px;
+              font-weight: 500;
+              "
+              
+              >
+                Donec pede justo, fringilla vel, aliquet nec, vulputa
+                te eget, arcu. In enim 
+                justo,ligula. Cum eget dolor Aenean rhoncus ut, fr
+                ingilla vel, aliquet
+                 nec, imperdiet 
+                a, venenatis vitae,
+                 justo. Nullam dictum felis eu pede mollis 
+                pretium.
+              </p>
+            </div>
+          </div>
+          <div class="cards-item d-flex align-items-center swiper-slide p-4" style="gap: 20px; border: 1px solid rgba(43, 43, 43, 0.113); border-radius: 10px;">
+            <div>
+              <img style="border-radius: 10px;" class="pb-4" src="./image/testi-avtar-4.jpg" alt="">
+            </div>
+            <div>
+              <h5>Jon Doe</h5>
+              <h6>Marketing Manager</h6>
+              <p style=
+              "
+              font-size: 14px;
+              font-weight: 500;
+              "
+              
+              >
+                Donec pede justo, fringilla vel, aliquet nec, vulputa
+                te eget, arcu. In enim 
+                justo,ligula. Cum eget dolor Aenean rhoncus ut, fr
+                ingilla vel, aliquet
+                 nec, imperdiet 
+                a, venenatis vitae,
+                 justo. Nullam dictum felis eu pede mollis 
+                pretium.
+              </p>
+            </div>
+          </div>
+          <div class="cards-item d-flex align-items-center swiper-slide p-4" style="gap: 20px; border: 1px solid rgba(43, 43, 43, 0.113); border-radius: 10px;">
+            <div>
+              <img style="border-radius: 10px;" class="pb-4" src="./image/testi-avtar-5.jpg" alt="">
+            </div>
+            <div>
+              <h5>Jon Doe</h5>
+              <h6>Marketing Manager</h6>
+              <p style=
+              "
+              font-size: 14px;
+              font-weight: 500;
+              "
+              
+              >
+                Donec pede justo, fringilla vel, aliquet nec, vulputa
+                te eget, arcu. In enim 
+                justo,ligula. Cum eget dolor Aenean rhoncus ut, fr
+                ingilla vel, aliquet
+                 nec, imperdiet 
+                a, venenatis vitae,
+                 justo. Nullam dictum felis eu pede mollis 
+                pretium.
+              </p>
+            </div>
+          </div>
+          <div>
+            <h5></h5>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-5" style="gap: 40px;">
+          <div class="swiper-prev"><i class="fa-solid fa-left-long"></i></div>
+        <div class="swiper-next"><i class="fa-solid fa-right-long"></i></div>
+        </div>
+        
+      </div>
+     
+    </div>
+  </div>
+
+  <div class="latest-blog py-5" style="background-color: #f9f9f9">
+    <div class="container">
+     <div class="text-center">
+      <h2 class="title mb-3">Lastest Blog</h2>
+      <p class="m-auto mb-5" style="max-width: 800px; opacity: 0.7">Lorem ipsum dolor sit amet, consectetur ad
+        ipisicing elit, sed do eiusmod tempor. incididunt ut labor
+        e et dolore. Lorem ipsum dolor sit amet, consectetur adipisicing e
+        lit, sed do eiusm dipisicing elit, sed do eiusmod tempor.
+      </p>
+     </div>
+     <div class="row">
+      <div class="col-md-4 col-sm-6 card1">
+        <div>
+          <img style="overflow: hidden;" src="./image/bg-2.png" alt="">
+          <div class="d-flex">
+            <div style="background: black; padding-top: 20px; transition: all .3s linear;" class="text-center px-3 social">
+              <p><i class="fa-brands fa-facebook-f text-white"></i></p>
+              <p><i class="fa-brands fa-twitter text-white"></i></p>
+              <p><i class="fa-brands fa-linkedin text-white"></i></p>
+              <p><i class="fa-brands fa-google-plus-g text-white"></i></p>
+              <p><i class="fa-brands fa-tumblr text-white"></i></p>
+            </div>
+            <div style="padding-left: 20px;">
+              <p style="font-size: 19px; font-weight: 600; cursor: pointer;   transition: 0.5s;" class="p-0 blog-text">Four ways to cheer and plan your self up on Blue</p>
+            <div style="font-size: 14px; opacity: .7;">
+              <span><i style="margin-right: 5px;" class="fa-regular fa-user"></i>by dtm_demo</span>
+              <span style="margin-left: 8px;"><i style="margin-right: 5px;" class="fa-regular fa-calendar-days"></i>19 Dec 2018</span>
+            </div>
+            <hr class="space">
+            <p style="opacity: .7;">Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets dssdolor....
+            </p>
+                <div class="d-flex align-items-center arrow-icon" style="gap: 10px;">
+                  <a style="text-decoration: none;color: black; padding-bottom: 5px;" href="">Read Me</a>
+                  <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+         
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 card1">
+        <div>
+          <img style="overflow: hidden;" src="./image/bg3-360x260.jpg" alt="">
+          <div class="d-flex">
+            <div style="background: black; padding-top: 20px; transition: all .3s linear;" class="text-center px-3 social">
+              <p><i class="fa-brands fa-facebook-f text-white"></i></p>
+              <p><i class="fa-brands fa-twitter text-white"></i></p>
+              <p><i class="fa-brands fa-linkedin text-white"></i></p>
+              <p><i class="fa-brands fa-google-plus-g text-white"></i></p>
+              <p><i class="fa-brands fa-tumblr text-white"></i></p>
+            </div>
+            <div style="padding-left: 20px;">
+              <p style="font-size: 19px; font-weight: 600; cursor: pointer;   transition: 0.5s;" class="p-0 blog-text">Four ways to cheer and plan your self up on Blue</p>
+            <div style="font-size: 14px; opacity: .7;">
+              <span><i style="margin-right: 5px;" class="fa-regular fa-user"></i>by dtm_demo</span>
+              <span style="margin-left: 8px;"><i style="margin-right: 5px;" class="fa-regular fa-calendar-days"></i>19 Dec 2018</span>
+            </div>
+            <hr class="space">
+            <p style="opacity: .7;">Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets dssdolor....
+            </p>
+                <div class="d-flex align-items-center arrow-icon" style="gap: 10px;">
+                  <a style="text-decoration: none;color: black; padding-bottom: 5px;" href="">Read Me</a>
+                  <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+         
+          </div>
+       
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 card1">
+        <div>
+          <img style="overflow: hidden;" src="./image/bg1-360x260.jpg" alt="">
+          <div class="d-flex">
+            <div style="background: black; padding-top: 20px; transition: all .3s linear;" class="text-center px-3 social">
+              <p><i class="fa-brands fa-facebook-f text-white"></i></p>
+              <p><i class="fa-brands fa-twitter text-white"></i></p>
+              <p><i class="fa-brands fa-linkedin text-white"></i></p>
+              <p><i class="fa-brands fa-google-plus-g text-white"></i></p>
+              <p><i class="fa-brands fa-tumblr text-white"></i></p>
+            </div>
+            <div style="padding-left: 20px;">
+              <p style="font-size: 19px; font-weight: 600; cursor: pointer;   transition: 0.5s;" class="p-0 blog-text">Four ways to cheer and plan your self up on Blue</p>
+            <div style="font-size: 14px; opacity: .7;">
+              <span><i style="margin-right: 5px;" class="fa-regular fa-user"></i>by dtm_demo</span>
+              <span style="margin-left: 8px;"><i style="margin-right: 5px;" class="fa-regular fa-calendar-days"></i>19 Dec 2018</span>
+            </div>
+            <hr class="space">
+            <p style="opacity: .7;">Lorem ipsum dolor sit amet, rcquisc adipiscing elit. Aenean socada commodo ligauala egets dssdolor....
+            </p>
+                <div class="d-flex align-items-center arrow-icon" style="gap: 10px;">
+                  <a style="text-decoration: none;color: black; padding-bottom: 5px;" href="">Read Me</a>
+                  <span><i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+         
+          </div>
+       
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+  <div class="our-clients py-5">
+    <div class="container">
+        <div class="text-center">
+          <img class="m-auto" src="./image/partner-slide-man.png" alt="">
+        </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="all-title">
+            <h3 class="title">meet our clients</h3>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="parent-img">
+
+            <img class="text-center" src="./image/partner-g1.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="parent-img">
+
+            <img class="text-center" src="./image/partner-g2.png" alt="">
+          </div> 
+               </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="parent-img">
+
+            <img class="text-center" src="./image/partner-g3.png" alt="">
+          </div>    
+            </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="parent-img">
+
+            <img class="text-center" src="./image/partner-g4.png" alt="">
+          </div> 
+               </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="parent-img">
+
+            <img class="text-center" src="./image/partner-g5.png" alt="">
+          </div>  
+              </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="parent-img">
+
+            <img class="text-center" src="./image/partner2.png" alt="">
+          </div>
+                </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="talk-us py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <h3 class="text-white" style="font-size: 700;">if you like this grate work ?? for you site...
+        </h3>
+        <button class="details-button talk-btn">Purchase Now</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer bg-dark py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 text-white">
+          <div>
+            <h2 class="mx-3 mb-2" >Contact Info</h2>
+            <hr width="30%" class="mx-3 mb-5" style="color: #0c65ed; height: 6px;">
+            <div>
+              <span class="mx-3"><i class="fa-solid fa-location-dot"></i></span>
+              <span>123 Street Market, Life Plaza, New York</span>
+            </div>
+            <div class="my-3">
+              <span class="mx-3"><i class="fa-solid fa-phone-volume"></i></span>
+              <span>987654321</span>
+            </div>
+            <div>
+              <span class="mx-3"><i class="fa-regular fa-envelope"></i></span>
+              <span>team@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 text-white">
+          <div>
+            <h2 class="mx-3 mb-2" >Post</h2>
+            <hr width="30%" class="mx-3 mb-5" style="color: #0c65ed; height: 6px;">
+            <div class="d-flex align-items-center" style="gap: 7px;">
+              <div style="  
+                width: 80px;
+              display: table-cell;
+              vertical-align: middle;
+              border-radius: 3px;
+              overflow: hidden;
+              ">
+                <img style="height: 60px; max-width: 100%; margin-bottom: 16px;" src="./image/footer1.png" alt="">
+              </div>
+              <div>
+                <h5>Four ways to cheer and plan your self up on Blue</h5>
+                <p style="opacity: .7;"><span class="mx-2"><i class="fa-regular fa-calendar-days"></i></span>December 19, 2018</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center" style="gap: 7px;">
+              <div style="  
+                width: 80px;
+              display: table-cell;
+              vertical-align: middle;
+              border-radius: 3px;
+              overflow: hidden;
+              ">
+                <img style="height: 60px; max-width: 100%; margin-bottom: 16px;" src="./image/footer2.jpg" alt="">
+              </div>
+              <div>
+                <h5>Four ways to cheer and plan your self up on Blue</h5>
+                <p style="opacity: .7;"><span class="mx-2"><i class="fa-regular fa-calendar-days"></i></span>December 19, 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 text-white">
+          <div>
+            <h2 class="mx-3 mb-2" >Popular</h2>
+            <hr width="30%" class="mx-3 mb-5" style="color: #0c65ed; height: 6px;">
+         
+              <div class="footer-btn">
+                <button>Accountancy</button>
+                <button>Affiliate</button>
+                <button>Branding</button>
+                <button>Construction</button>
+                <button>Design</button>
+                <button>Drupal</button>
+                <button>Education</button>
+                <button>Graphic</button>
+                <button>Joomla</button>
+                <button>Marketing</button>
+                <button>Money</button>
+                <button>Tally</button>
+                <button>Transform</button>
+                <button>Website</button>
+                <button>Wordpress</button>
+              </div>
+
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="col-12 mt-5">
+      <div class="end text-center shadow p-3 mb-5 rounded ">
+        <p>© 2019 Developed By DTM Theme</p>
+      </div>
+    </div>
+  </div>
+ 
+    <button class="scrollTop" onclick="scrolTop()">^</button>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="js/index.js"></script>
+
   </body>
+
 </html>

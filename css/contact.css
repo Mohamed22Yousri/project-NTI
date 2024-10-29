@@ -1,0 +1,58 @@
+:root {
+  --main--color: #0c65ed;
+}
+.sec-contact .overLay {
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+}
+.contact-text {
+  z-index: 1;
+  font-size: 50px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-info i {
+  font-size: 35px;
+  color: var(--main--color);
+}
+.get-touch .form {
+  position: relative;
+}
+.get-touch i {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 17px;
+  color: #1a1a1a;
+  z-index: 1;
+}
+.get-touch span input {
+  margin: 30px 0;
+  border: 0;
+  border-bottom: 1px solid #1a1a1a;
+  text-transform: capitalize;
+  box-shadow: none !important;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  padding-left: 35px;
+}
+.get-touch .send input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--main--color);
+  color: white;
+  transition: .5s;
+}
+.get-touch .send input:hover {
+  background-color: black;
+}
